@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="/styles/components.css" charset="utf-8">
+    <link rel="stylesheet" href="/styles/main.css" charset="utf-8">
+    <link rel="stylesheet" href="/styles/animation.css" charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  </head>
+  <body>
+      <div class="login">
+        <section class="card login__card">
+          <form id="login__form" action="index.html" method="GET">
+            <h2 class="login__title">Cadastre-se</h2>
+            <div class="login__input input__name">
+              <label for="name">Nome:</label>
+              <input id="login__name" tabindex="1" type="name" name="name" placeholder="Digite seu nome" autofocus>
+            </div>
+            <div class="login__input input__email">
+              <label for="email">Email:</label>
+              <input id="login__email" tabindex="1" type="email" name="email" placeholder="Digite seu email">
+            </div>
+            <div class="login__input input__password">
+              <label for="email">Senha:</label>
+              <input tabindex="2" type="password" name="password" placeholder="Digite sua senha">
+            </div>
+            <div class="login__input input__password">
+              <label for="email">Lembrar-me?</label>
+              <div class="login__remember-me">
+                <div class="login_switch input__switch">
+                  <input type="checkbox" name="rememberme" value="true" checked>
+                  <span class="input__switch__toggle"></span>
+                  <label>NÃO</label>
+                  <label>SIM</label>
+                </div>
+                <span class="login__remember-me__label">Cadastre-se e continue logado.</span>
+              </div>
+            </div>
+            <div class="login__button-bar">
+              <a class="link login__singin" href="login.html">Já tenho cadastro</a>
+              <button tabindex="3" id="login__submit" class="btn lockerscreen" name="button">Cadastrar</button>
+            </div>
+          </form>
+        </section>
+      </div>
+
+      <!-- Dependencies -->
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"></script>
+
+      <!-- Components -->
+      <script type="text/javascript" src="/scripts/components/notification.js"></script>
+      <script type="text/javascript" src="/scripts/components/lockscreen.js"></script>
+      <script type="text/javascript" src="/scripts/components/tooltip.js"></script>
+
+      <!-- Modules -->
+      <script type="text/javascript" src="/scripts/app.js"></script>
+      <script type="text/javascript" src="/scripts/modules/commons.js"></script>
+
+      <!-- Modules/*/Services -->
+      <script type="text/javascript" src="/scripts/modules/users/service.js"></script>
+      <script type="text/javascript" src="/scripts/modules/login/service.js"></script>
+
+      <!-- Modules/*/Controllers -->
+      <script type="text/javascript" src="/scripts/modules/signin/controller.js"></script>
+  </body>
+</html>

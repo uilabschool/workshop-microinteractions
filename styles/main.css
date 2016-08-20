@@ -1,0 +1,87 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  box-sizing: border-box;
+  font-family: Lato-Bold;
+}
+
+body, html {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    min-height: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    height: 100%;
+    background: #FFFFFF;
+    position: relative;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background: #F6F7F9;
+}
+
+.login {
+  flex: 1;
+  display: flex;
+  align-items: stretch;
+  align-content: stretch;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+.login__card {
+  align-self: center;
+}
+
+.login__title {
+  flex: 1;
+  font-size: 32px;
+  color: #444D6E;
+  font-weight: lighter;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.login__input {
+  width: 300px;
+}
+
+.login__email__label {
+  display: flex;
+  justify-content: space-between;
+}
+
+.login__remember-me {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.login__remember-me__label {
+  font-size: 12px;
+  color: rgb(138,152,184);
+  margin-left: 10px;
+}
+
+.login__button-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 2em;
+}
+
+.login__singin {
+  margin-right: 10px;
+}
+
+.login_switch {
+  margin: 0;
+}
