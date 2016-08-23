@@ -2,7 +2,7 @@ window.$app = window.$app || {};
 
 (function ($app) {
   const LOCKSCREEN_SELECTOR = '.login__btn--lockscreen';
-  const CLASS_LOCKSCREEN_BACKGROUND_SELECTOR = '.login__btn--lockscreen__background';
+  const LOCKSCREEN_BACKGROUND_SELECTOR = '.login__btn--lockscreen__background';
   const CLASS_LOCKSCREEN_CLOSE = 'login__btn--lockscreen__background--close';
   const components = $app.components = ($app.components || {});
 
@@ -15,7 +15,7 @@ window.$app = window.$app || {};
         <div class="login__btn--lockscreen__background"></div>
       </div>`
     );
-    const $background = $element.find(CLASS_LOCKSCREEN_BACKGROUND_SELECTOR);
+    const $background = $element.find(LOCKSCREEN_BACKGROUND_SELECTOR);
 
     $background.css('left', e.layerX || e.x);
     $background.css('top', e.layerY || e.y);

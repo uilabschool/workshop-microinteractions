@@ -5,7 +5,7 @@ window.$app = window.$app || {};
   const SUBMIT_SELECTOR = '#login__submit';
   const INPUT_EMAIL_SELECTOR = '#login__email';
   const INPUT_CLASS_ERROR = 'input__email--error';
-  const TEMPLATE_NOVO_USUARIO = 'Não encontramos sua conta. <a href="signin.html" class="link">CADASTRE-SE</a>';
+  const TEMPLATE_NOVO_USUARIO = 'Não encontramos sua conta. <a href="register.html" class="link">CADASTRE-SE</a>';
   const { startLoading, validateFieldEmail, formToObject } = $app.commons;
 
   function checkUserExists($current) {

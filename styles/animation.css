@@ -88,3 +88,43 @@
   border-radius: 0px;
   transition: height .5s ease-out;
 }
+
+.tooltip__password {
+  padding: 1em 1em 1em 2em;
+}
+
+.tooltip__password > li {
+  list-style: none;
+  position: relative;
+  line-height: 2em;
+  color: rgb(138,152,184);
+  font-size: 14px;
+}
+
+.tooltip__password > li::before {
+  content: "";
+  position: absolute;
+  height: 8px;
+  width: 8px;
+  left: -18px;
+  top: 50%;
+  border-radius: 100%;
+  border: 1px solid gray;
+  transform: translateY(-50%);
+}
+
+.tooltip__password__lvl-1--check:before {
+  background: rgb(206,94,115);
+}
+
+.tooltip__password__lvl-2--check:before {
+  background: rgb(253,199,8);
+}
+
+.tooltip__password__lvl-3--check:before {
+  background: rgb(95,171,241);
+}
+
+.tooltip__password__lvl-4--check:before {
+  background: rgb(49,175,112);
+}
